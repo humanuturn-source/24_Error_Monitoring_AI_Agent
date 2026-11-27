@@ -226,13 +226,16 @@ This lightweight built-in HTTP server renders realistic pages with an Out of Mem
 
 4. Sample Test Prompts
 
-⚬ Specific Error Check ("Out of Memory"):
+- Specific Error Check ("Out of Memory"):
   Open http://localhost:5001/oom and check if an "Out of memory" error is displayed on the screen.
-⚬ General Error Detection (500 Server Error):
+
+- General Error Detection (500 Server Error):
   Visit http://localhost:5001/server-error, inspect what is shown on the page, and report any errors or HTTP status issues.
-⚬ Form Validation Error Check:
+
+- Form Validation Error Check:
   Go to http://localhost:5001/form-check, fill #threshold with "150", click #apply_btn, and report whether a validation error appears on screen.
-⚬ Healthy / No-Error Page Check:
+
+- Healthy / No-Error Page Check:
   Check http://localhost:5001/ and verify whether the page is healthy with no error messages displayed.
 
 Would you like to add a dedicated rule-based keyword scanner (for exact substrings like out of memory or 500) alongside gemma4 verification for even stricter regression testing?
